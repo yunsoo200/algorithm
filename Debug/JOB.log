@@ -1,3 +1,5 @@
-﻿  10814.cpp
+﻿  tree.cpp
+c:\users\yunso\documents\visual studio 2015\projects\job\job\tree.cpp(30): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\yunso\documents\visual studio 2015\projects\job\job\tree.cpp(38): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   JOB.vcxproj -> C:\Users\yunso\Documents\Visual Studio 2015\Projects\JOB\Debug\JOB.exe
   JOB.vcxproj -> C:\Users\yunso\Documents\Visual Studio 2015\Projects\JOB\Debug\JOB.pdb (Full PDB)
