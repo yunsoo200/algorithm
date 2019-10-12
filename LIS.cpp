@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+//https://jason9319.tistory.com/113 ÂüÁ¶
 
 int main() {
 	srand((unsigned int)time(NULL));
@@ -25,7 +26,7 @@ int main() {
 		if (lis1[i] == 0) lis1[i] = 1;
 		for (int j = 1; j < i; j++) {
 			if (arr[i] > arr[j]) {
-				if (lis1[i] < lis1[j]) lis1[i] = lis1[j] + 1;
+				if (lis1[i] <= lis1[j]) lis1[i] = lis1[j] + 1;
 			}
 		}
 		if (max1 < lis1[i]) max1 = lis1[i];
@@ -40,7 +41,11 @@ int main() {
 		if (arr[i] > lis2.back())
 			lis2.push_back(arr[i]);
 		else {
-
+			auto it = lower_bound(lis2.begin() + 1, lis2.end(), arr[i]);
+			//
+			*it = arr[i];
 		}
 	}
+	max2 = lis2.size() - 1;
+	cout << max2 << endl;
 }
